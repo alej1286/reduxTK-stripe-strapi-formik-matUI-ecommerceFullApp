@@ -12,6 +12,7 @@ import {
   setIsCartOpen,
 } from "../../state/cartSlice";
 import { useNavigate } from "react-router-dom";
+import { red } from "@mui/material/colors";
 
 const FlexBox = styled(Box)`
   display: flex;
@@ -30,6 +31,7 @@ const CartMenu = () => {
   }, 0);
 
   return (
+    /* ALL VISIBLE AREA WHEN  */
     <Box
       display={isCartOpen ? "block" : "none"}
       backgroundColor="rgba(0, 0, 0, 0.4)"
@@ -122,9 +124,13 @@ const CartMenu = () => {
             ))}
           </Box>
 
-          {/* actions */}
-          <Box m="20px 0">
-            <FlexBox m="20px 0">
+          {/* ACTIONS BLOCK */}
+          <Box m="20px 0" 
+          //backgroundColor="red"
+          >
+            <FlexBox m="20px 0"
+            //backgroundColor="red"
+            >
               <Typography fontWeight="bold">SUBTOTAL</Typography>
               <Typography fontWeight="bold">${totalPrice}</Typography>
             </FlexBox>
