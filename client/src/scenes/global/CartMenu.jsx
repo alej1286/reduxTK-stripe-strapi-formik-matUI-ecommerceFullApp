@@ -12,7 +12,7 @@ import {
   setIsCartOpen,
 } from "../../state/cartSlice";
 import { useNavigate } from "react-router-dom";
-import { red } from "@mui/material/colors";
+//import { red } from "@mui/material/colors";
 
 const FlexBox = styled(Box)`
   display: flex;
