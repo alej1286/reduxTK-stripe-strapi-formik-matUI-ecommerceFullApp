@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <Box
       display="flex"
-      alighItems="center"
+      alighitems="center"
       width="100%"
       height="60px"
       backgroundColor="rgba(255,255,255,0.95)"
